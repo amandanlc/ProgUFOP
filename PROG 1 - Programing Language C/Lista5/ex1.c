@@ -47,6 +47,7 @@ int main(){
     while (getchar() != '\n');
     printf("\nDigite a descrição do compromisso (ex: Aniversário): ");
     fgets(c.text, sizeof(c.text), stdin);
+    c.text[strcmp(c.text, "\n")] = 0;
 
     c.horario = h;
     c.data = d;
